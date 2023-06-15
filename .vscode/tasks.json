@@ -5,8 +5,9 @@
       "label": "C/C++: clang++ 활성 파일 빌드",
       "command": "/usr/bin/clang++",
       "args": [
-        "-fcolor-diagnostics",
-        "-fansi-escape-codes",
+        "-std=c++17",
+        "-stdlib=libc++",
+        "-fdiagnostics-color=always",
         "-g",
         "${file}",
         "-o",
@@ -22,7 +23,7 @@
         "kind": "build",
         "isDefault": true
       },
-      "detail": "디버거에서 생성된 작업입니다."
+      "detail": "compiler: /usr/bin/clang++"
     }
   ],
   "version": "2.0.0"
